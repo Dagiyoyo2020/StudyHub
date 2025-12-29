@@ -1,0 +1,7 @@
+{
+  "name": "StudyHub",
+  "description": "A futuristic, AI-powered student productivity platform featuring intelligent study planning, subject-specific tutoring, and auto-generated flashcards.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
