@@ -18,7 +18,7 @@ const Auth = () => {
   useEffect(() => {
     checkSession();
     
-    // Set up auth state change listener for Google OAuth callback
+    // Set up auth state change listener for Googleg OAuth callback
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       async (event, session) => {
         if (event === 'SIGNED_IN' && session) {

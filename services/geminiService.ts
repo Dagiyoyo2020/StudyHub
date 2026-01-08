@@ -1,11 +1,12 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
+import { GEMINI_API_KEY } from "../constants";
 
 const getAI = () => {
-  const apiKey = "AIzaSyAHeLLl4ZSihS8jZR-RFHbro_WAoXeJ-N0";
+  const apiKey = GEMINI_API_KEY;
   if (!apiKey) {
-    console.error("API_KEY is missing from environment variables.");
-    throw new Error("API Key configuration missing. Please check your settings.");
+    console.error("VITE_GEMINI_API_KEY is missing from environment variables. Please add it to your .env file.");
+    throw new Error("API Key configuration missing. Please check your .env file and add VITE_GEMINI_API_KEY.");
   }
   return new GoogleGenAI({ apiKey });
 };
