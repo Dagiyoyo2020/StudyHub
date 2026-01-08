@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node node_modules/vite/bin/vite.js build",
+    "build": "npm run vercel-build",
     "preview": "vite preview",
     "vercel-build": "chmod +x node_modules/.bin/vite && npm run build"
   },
